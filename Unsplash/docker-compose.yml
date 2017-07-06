@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app:
+    volumes:
+      - ./daily_image:/app/daily_image
+    build: .
+    env_file:
+      - .env
